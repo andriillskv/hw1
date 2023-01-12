@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <h1 id="title">Survey form</h1>
+    <p id="description">Please tell us how did we do</p>
+    <form method="post" action="/" id="survey-form">
+        <fieldset>
+            <label id="name-label">Your First name <input id="name" type="text" maxlength="36" minlength="5" placeholder="Enter your first name" required/></label>
+            <label id="surname-label">Your Last name <input type="text" maxlength="36" minlength="5" placeholder="Enter your last name" /></label>
+            <label id="age-label">Your Age <input type="number" min="6" max="120" placeholder="Years" /></label>
+            <label id="email-label">Your Email <input id="email" type="email" min="6" max="120" placeholder="Address@email.com" required /></label>
+            <label id="number-label">Your Phone number <input id="number" type="number" min="10" max="10" placeholder="Your Phone" /></label>
+            <label id="referrer">Where did you found out about us <select id="dropdown" type="dropdown">
+                    <option value="">(please choose)</option>
+                    <option value="1">Friends </option>
+                    <option value="2">Work colleagues </option>
+                    <option value="3">Other </option>
+                </select></label>     
+        </fieldset>
+        <fieldset>
+            <label>Would you recommend us to your friends?</label>
+            <label for="certainly"><input type="radio" name="account-type" id="certainly" class="inline" value="1"/> Certainly</label>
+            <label for="Possibly"><input type="radio" name="account-type" id="Possibly" class="inline" value="2" /> Possibly</label>
+            <label for="not-certain"><input type="radio" name="account-type" id="not-certain" class="inline" value="3" /> Not certain</label>  
+        </fieldset>
+        <fieldset>
+            <label for="favorite">What is your favorite feature? <select id="favorite" >
+                <option value="0">(Please select)</option>
+                <option value="1">Challenges</option>
+                <option value="2">Project</option>
+                <option value="3">Tournaments</option>
+            </select>
+            </label>
+        </fieldset>
+        <fieldset>
+            <label for="suggestion">What would you like to see improved? <span id="clue">(check all that apply)</span>
+                <label><input id="suggestion" type="checkbox" value="Front-end"/> Front-end Projects </label>
+                <label><input id="suggestion" type="checkbox" value="data-vis"> Data Visualization </label>
+                <label><input id="suggestion" type="checkbox" value="forum"/> Forum </label>
+            </label>
+        </fieldset>
+        <fieldset>
+            <label for="comments">Any comments or suggestions?
+                <textarea id="comments" name="comments" rows=3 cols="25" placeholder="Enter your comments"></textarea>
+            </label>
+        </fieldset>
+        <input type="submit" value="Submit" id="submit">
+    </form>
+    
+</body>
+<h2>DIMA LOX</h2>
+</html>
